@@ -1,0 +1,175 @@
+{
+ "uso": "congelamento",
+ "indicador": "ICCS - Indice de Condicoes de Credito Setorial",
+ "data_congelamento": "2026-11-10",
+ "aprovado_pelo_pesquisador_em": "2026-11-10: aprovação do pesquisador na conversa do projeto (opção 'Sim, congelar agora'), com as assinaturas publicadas em repositório público no GitHub.",
+ "gravado_em_utc": "2026-11-10T19:36:55Z",
+ "assinaturas": {
+  "metodologia": [
+   {
+    "caminho": "../metodologia_iccs_congelamento.md",
+    "sha256": "1cda1968a79d29cb8f87e88cfdfa4da7e1d58866c6f5d41cf90c7a2a43bc6a9a"
+   },
+   {
+    "caminho": "../metodologia_iccs_congelamento.pdf",
+    "sha256": "26c9b7f5dfde02647b323598ac5f5fe08a20f68e654f20dd079933faf7cf78c7"
+   }
+  ],
+  "codigo_construcao": [
+   {
+    "caminho": "../preparacao_congelamento/base/construir_indice_congelamento.py",
+    "sha256": "a4ac836af3ee58017a0dfe2a7c613ce485ea8300d194acb863b98f249fa20465"
+   },
+   {
+    "caminho": "../preparacao_congelamento/base/rodar_congelamento.sh",
+    "sha256": "db0d7e95dda188c2c8d319c06fa9e2d9828d21752b2b9b4c9adcd3adcbf936ae"
+   },
+   {
+    "caminho": "../preparacao_congelamento/base/rodar_mensal.sh",
+    "sha256": "c4154fc1b2a50b92f488eb8945383cc5c96df044b5c044802adacb1c32518469"
+   },
+   {
+    "caminho": "../preparacao_congelamento/base/indice_referencia_2019_12/SHA256SUMS",
+    "sha256": "e77a12a5c17c544467dfdc81cd93b5aa9ae4d8dceae0210f8df294c9c0bc6acf"
+   },
+   {
+    "caminho": "../base_dados/scripts/integrar_base.py",
+    "sha256": "f26c3200397406d11b9a8141a2b3ef3f80d49a7f07b6217a8b912ccb36cb3e76"
+   }
+  ],
+  "programa_avaliacao": [
+   {
+    "caminho": "../preparacao_congelamento/avaliacao/avaliar_iccs.py",
+    "sha256": "ea285064b7e8d86e3b837a9701fc7865dd7570bf82b393ac24f5e885f399a87d"
+   },
+   {
+    "caminho": "../exploracao/resultados/decisao_1_modelo_comparacao.json",
+    "sha256": "e668d1348958c86c1764bccecba21a26de1e5562e807ac6d33e03431b650b400"
+   },
+   {
+    "caminho": "../exploracao/poder/tabelas/poder_painel.csv",
+    "sha256": "6736101efd86adf1cdc892aae9bd3ea9385dc691ce1ab2c2844ea29f85e7c32d"
+   },
+   {
+    "caminho": "../exploracao/poder/tabelas/poder_unidades.csv",
+    "sha256": "a052b66a89f665b7d70498aa9dd0da529b3d3b353344e5efc765f2943d6156d4"
+   }
+  ],
+  "lista_testes": [
+   {
+    "caminho": "../preparacao_congelamento/avaliacao/lista_testes.csv",
+    "sha256": "8e1dd02b19d88d2f3c3cb48e5f28673279023d9f9b70efe0bd8d155c2343887c"
+   }
+  ]
+ },
+ "registro_informativo": {
+  "dados_da_avaliacao_2020": [
+   {
+    "caminho": "../base_dados/painel/painel_unificado.parquet",
+    "sha256": "be28b2b24909ef97111731e804dd6d408143c876633eb076897f79ab41926f06"
+   },
+   {
+    "caminho": "../base_dados/SHA256SUMS",
+    "sha256": "74266bf5e2e55bd57f4fd5e59e5441b2a1f2a67bb7d2b2986c3d164d98f97739"
+   }
+  ],
+  "coletores": [
+   {
+    "caminho": "../base_dados/scripts/guardar_safras.py",
+    "sha256": "56f3fd40544177d8dbba2cc6b0b998346dbd1de7456e356d250ddf54ed3ba76d"
+   },
+   {
+    "caminho": "../base_dados/scripts/comparar_safras.py",
+    "sha256": "b5532916336c7754ff2d0fbe90adf617ac2acf09ad214119e08dbb91eef1db63"
+   },
+   {
+    "caminho": "../base_dados/scripts/coletar_bcb.py",
+    "sha256": "aa44291f35f50f932f12be21bf92e4c407e0a9abc906a7c77e1d108d54894bad"
+   },
+   {
+    "caminho": "../base_dados/scripts/coletar_ibge.py",
+    "sha256": "2b60ec5496348df8520fbd6e87d59c1d59e06bac77e615d96b8fcee9e3f86ded"
+   },
+   {
+    "caminho": "../base_dados/scripts/coletar_outras.py",
+    "sha256": "734351c9a5d16a80045b3f8abaece0f6ccda59104ef7cd97634b870f24cd7c14"
+   },
+   {
+    "caminho": "../base_dados/scripts/tratar_outras.py",
+    "sha256": "3e6694eab95c6adf5c61100ada3558fc391fc2ab9dfb56e78f07d12b040504cb"
+   }
+  ],
+  "testes": [
+   {
+    "caminho": "../preparacao_congelamento/avaliacao/testes_avaliacao.py",
+    "sha256": "0c73e8a35d71ea1403748c173bc7eeb2c0476570d6f5fe9d3bc54bb57f5d6007"
+   },
+   {
+    "caminho": "../preparacao_congelamento/base/testes_construcao.py",
+    "sha256": "37e8e294e9066faba4b9ff9f8f8d6e9107a0e0b6a9231ab0b7c035bc704af59b"
+   },
+   {
+    "caminho": "../preparacao_congelamento/base/integracao_sintetica.py",
+    "sha256": "cb06777eb6028f4e1d5a047848f1ad008bfa1209afe7c7f77c0860c6f5521271"
+   }
+  ],
+  "protocolo": [
+   {
+    "caminho": "../exploracao/protocolo/protocolo_exploracao_iccs.md",
+    "sha256": "0604f1e5ad871cb850cdcd46bad2730e8e218cffd625549cd6ac76663c58d35d"
+   },
+   {
+    "caminho": "../exploracao/protocolo/adendo_1_protocolo.md",
+    "sha256": "8ae33554f1a584ca2c8e21a04ad58c791f89612a857c9963a43c89b491a215bc"
+   },
+   {
+    "caminho": "../exploracao/protocolo/adendo_2_protocolo.md",
+    "sha256": "b31440fc9599804d4b9fb0e452e3f562bc4442e886fd9f6db5f1acee0b67b297"
+   }
+  ],
+  "notas": [
+   {
+    "caminho": "../preparacao_congelamento/avaliacao/nota_avaliacao.md",
+    "sha256": "0445bd510c7aea89dfa114595bb2ac6fb53760048163d3cac37369677310ccec"
+   },
+   {
+    "caminho": "../preparacao_congelamento/base/nota_base_congelamento.md",
+    "sha256": "55131c69eff61c3fb48ee44be6390aea0944a0135af206864ed7bbc1fe90c6ca"
+   }
+  ],
+  "somas_das_pastas": [
+   {
+    "caminho": "../SHA256SUMS",
+    "sha256": "9065315dc5f3ac67a34256ebbeb7dbd27002790799363a31d1cb4e481edc8636"
+   },
+   {
+    "caminho": "../base_dados/SHA256SUMS",
+    "sha256": "74266bf5e2e55bd57f4fd5e59e5441b2a1f2a67bb7d2b2986c3d164d98f97739"
+   },
+   {
+    "caminho": "../preparacao_congelamento/base/SHA256SUMS",
+    "sha256": "744af83ce9d078fdd62bea7fb692ddf2f2d382462a0b372b33bb66f9dd9eee8e"
+   },
+   {
+    "caminho": "../preparacao_congelamento/avaliacao/SHA256SUMS",
+    "sha256": "d7d2458e920629ff334ae6fedcd94985fa8deb1622039a1f7e7a8280c7f2ba6c"
+   },
+   {
+    "caminho": "../exploracao/protocolo/SHA256SUMS",
+    "sha256": "3b9da27ef6066fc52e9cf6837ecc5731196dd587f5820dd512cde7318bd7a6c8"
+   },
+   {
+    "caminho": "../exploracao/indice/SHA256SUMS",
+    "sha256": "a3834c8a559c27d3014b915140297c83f3d8d57edfb3d8ac89bba3108c69bebd"
+   },
+   {
+    "caminho": "../exploracao/resultados/SHA256SUMS",
+    "sha256": "894eac434475da11e3d7bed464872eec9d8d2d7cf9c421e7f78164015794b7fc"
+   },
+   {
+    "caminho": "../exploracao/poder/SHA256SUMS",
+    "sha256": "ea4f331282ebce490f689e34641d3c665d4d72d959aa236feab2b1b1250fb812"
+   }
+  ]
+ }
+}
